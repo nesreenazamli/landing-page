@@ -1,6 +1,8 @@
 :root {
     --main-color: #272D38;
     --light-bule: #8EADD5;
+    --gray-color: #F6F6F6;
+    --dark-gray-color: #DEDCDB;
 }
 
 @font-face {
@@ -19,12 +21,13 @@
 
 body {
     margin: 0;
-    font-family: Inter-Regular ;
+    font-family: Inter-Regular;
 }
 
 a {
     text-decoration: none;
 }
+
 img {
     max-width: 100%;
 }
@@ -45,7 +48,7 @@ header {
 }
 
 header .logo {
-    font-family: Inter-Bold ;
+    font-family: Inter-Bold;
     text-transform: uppercase;
 }
 
@@ -56,10 +59,10 @@ header a {
 header nav ul {
     margin: 0;
     display: flex;
-    font-family: Inter-Regular ;
+    font-family: Inter-Regular;
 }
 
-header nav ul li{
+header nav ul li {
     margin: 0 15px;
 }
 
@@ -93,29 +96,158 @@ header .menu div {
     color: var(--main-color);
 }
 
-.hero .hero-content h1{
+.hero .hero-content h1 {
     font-size: 4rem;
     margin-bottom: 0;
 }
 
-.hero .hero-content p{
+.hero .hero-content p {
     font-size: 1.125rem;
 }
 
-.hero .hero-img{
+.hero .hero-img {
     width: 40%;
 
 }
+
 .hero .hero-link {
     margin-top: 39px;
 }
+
 .hero a {
-   color: #fff;
+    color: #fff;
     background: var(--light-bule);
     padding: 10px 31px;
     border-radius: 8px;
 }
+
 /*End hero style*/
+
+/*Client style*/
+.client {
+    margin: 157px 0px;
+}
+
+.row-client {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 20px auto;
+    background: #F6F6F6;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.card-client {
+    width: 20%;
+}
+
+.card-client img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+
+.title-sec h6 {
+    color: #667085;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%; /* 16px */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/*End Client style*/
+
+/*Brand style*/
+.brand-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 157px;
+}
+
+.brand-section .brand-img {
+    width: 45%;
+}
+
+.brand-section .brand-content {
+    width: 45%;
+}
+
+.brand-section .brand-content h3 {
+    font-size: 3.125vw;
+}
+
+
+/*End Brand style*/
+
+/* Customer Style */
+.row-rev {
+    flex-direction: row-reverse;
+}
+
+/* End Customer Style */
+
+
+/*testimonial style*/
+.card {
+    background: var(--gray-color);
+    border-radius: 20px;
+}
+
+.card img {
+    width: 130px !important;
+    height: 130px;
+    border-radius: 50%;
+}
+
+/*End testimonial style*/
+
+/* TESTIMONIALS  style */
+.testimonial-wrapper {
+    margin-bottom: 157px;
+}
+
+.testimonial-content {
+    text-align: center;
+}
+
+.testimonial-content h4 {
+    font-size: 3.125vw;
+    margin: 10px auto;
+    width: 40%;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-wrapper .card {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.cards-wrapper .card p {
+    text-align: center;
+}
+
+.cards-wrapper .card img {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid var(--dark-gray-color);
+}
+
+
+/* End TESTIMONIALS  style */
 
 
 /* Responsive */
@@ -131,6 +263,7 @@ header .menu div {
         display: flex;
         font-size: 24px;
     }
+
     .menu nav {
         display: none;
     }
@@ -155,9 +288,41 @@ header .menu div {
     .hero .hero-content p {
         font-size: 0.9rem;
     }
+
     .hero .hero-img {
         margin-top: 80px;
     }
+
+    .row-client {
+        width: 100%;
+    }
+
+    .brand-section {
+        flex-direction: column-reverse !important;
+    }
+
+    .brand-section .brand-img {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .brand-section .brand-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .brand-section .brand-content i {
+        transform: rotate(90deg);
+    }
+
+    .cards-wrapper .card {
+        width: 100%;
+    }
+
+    .cards-wrapper {
+        flex-wrap: wrap;
+    }
+    .cards-wrapper .card {
+        margin-bottom: 20px;
+    }
 }
-
-
